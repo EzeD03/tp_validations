@@ -5,7 +5,7 @@ module.exports = (req,res,next) => {
     if(admins.includes(req.query.user)){
         next()
     } else {
-        res.redirect("/")
+        res.redirect("/noEntry")
     }
     
 }

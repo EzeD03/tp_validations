@@ -19,4 +19,7 @@ module.exports = {
             user : req.query.user
         })
     },
+    noEntry : (req,res) => {
+        return res.render("noEntry")
+    }
 }
